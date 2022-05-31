@@ -1,0 +1,17 @@
+<div class="main" *ngIf="currentPeople">
+  <div class="main__image-box">
+    <img class="main__image-box__image" src="assets/img/{{currentPeople?.img_url}}">
+  </div>
+  <div class="main__buttons">
+    <button (click)="skip()" [disabled]="last" mat-fab color="primary"
+            aria-label="Example icon button with a delete icon">
+      <mat-icon>delete</mat-icon>
+    </button>
+    <button (click)="like()" [disabled]="last" mat-fab aria-label="Example icon button with a heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+  </div>
+</div>
+
+
+

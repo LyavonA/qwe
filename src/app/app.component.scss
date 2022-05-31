@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: cornflowerblue;
+
+  > div.toolbar {
+    padding: 0 2em;
+    flex: 0 0 80px;
+    display: flex;
+    align-items: center;
+    background: #424242;
+    color: white;
+    font-weight: 600;
+  }
+
+  > div.content {
+    display: flex;
+    flex: 1;
+  }
+}

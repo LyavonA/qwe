@@ -1,0 +1,13 @@
+<div class="left">
+  <app-people-info [showOtherInfo]="false" [peopleInfo]="user$ | async"></app-people-info>
+  <button mat-raised-button color="primary" (click)="openParamsDialog()">Начать поиск</button>
+</div>
+<div class="main">
+  <app-people-card [last]="$lastSearchPeople | async" [currentPeople]="displayPeoples$ | async" (skipEvent)="skip($event)"
+                   (likeEvent)="like($event)"></app-people-card>
+</div>
+<div class="right">
+  <app-people-info *ngIf="displayPeoples$ | async" [peopleInfo]="displayPeoples$ | async"></app-people-info>
+</div>
+
+

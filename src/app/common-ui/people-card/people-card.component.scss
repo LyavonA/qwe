@@ -1,0 +1,33 @@
+:host {
+  display: flex;
+  flex: 1;
+
+  > div.main {
+    display: flex;
+    flex: 1;
+    position: relative;
+
+    > div.main__image-box {
+      display: flex;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      > img.main__image-box__image {
+        display: block;
+        border-radius: 3em;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    > div.main__buttons {
+      display: flex;
+      position: absolute;
+      bottom: 2em;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<div class="avatar">
+  <img class="avatar__img" src="assets/img/{{peopleInfo?.img_url}}">
+</div>
+
+<div class="full-name">
+  <label class="full-name__label title">{{peopleInfo?.full_name.firstname}} {{peopleInfo?.full_name.lastname}}</label>
+</div>
+
+<div class="other-info" *ngIf="showOtherInfo">
+  <div class="other-info__row">
+    <label class="other-info__row__label label-field-name">Рост:</label>
+    <label class="other-info__row__label label-field-value">{{peopleInfo?.specifications.growth}}</label>
+  </div>
+  <div class="other-info__row">
+    <label class="other-info__row__label label-field-name">Вес:</label>
+    <label class="other-info__row__label label-field-value">{{peopleInfo?.specifications.weight}}</label>
+  </div>
+  <div class="other-info__row">
+    <label class="other-info__row__label label-field-name">Возраст:</label>
+    <label class="other-info__row__label label-field-value">{{peopleInfo?.personality.age}}</label>
+  </div>
+  <div class="other-info__row">
+    <label class="other-info__row__label label-field-name">Пол:</label>
+    <label class="other-info__row__label label-field-value">{{peopleInfo?.personality.gender === 1 ? "Мужской" : "Женский"}}</label>
+  </div>
+  <div class="other-info__row">
+    <label class="other-info__row__label label-field-value">{{peopleInfo?.distance}} км. от вас</label>
+  </div>
+</div>

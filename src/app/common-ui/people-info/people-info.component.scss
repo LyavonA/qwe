@@ -1,0 +1,34 @@
+:host {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5em;
+
+  > div {
+    padding-bottom: 1em;
+  }
+
+  > div.avatar {
+    width: 320px;
+    height: 320px;
+
+    > img.avatar__img {
+      border: 3px solid silver;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  > div.other-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+    > div {
+      padding-bottom: .5em;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  flex: 1;
+  user-select: none;
+
+  > div.left {
+    flex: 0 0 25%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  > div.main {
+    background: #2971c5;
+    display: flex;
+    flex: 1;
+    padding: 20px;
+  }
+
+  > div.right {
+    flex: 0 0 25%;
+  }
+}
